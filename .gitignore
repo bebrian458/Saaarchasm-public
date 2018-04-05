@@ -1,0 +1,9 @@
+*.pyc
+*~
+*.mp3
+/env
+.vscode
+/Assets
+/Screenshots
+notes.txt
+package.json

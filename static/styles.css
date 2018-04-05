@@ -1,0 +1,112 @@
+h1 {
+    color: blue;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: gray;
+}
+
+.bar {
+    display: inline-block;
+    background-color: blue;
+    margin-right: 0;
+    padding: 0;
+    width: 200px; 
+    height:75px; 
+    border: solid 5px black;
+    vertical-align: middle;
+}
+#rect2 {
+    margin-left: -10px;
+    background-color: red;
+}
+
+.sarcastic-text {
+    position: relative;
+    top: 5px;
+}
+
+#title{
+    color: red;
+    font-weight: 900;
+}
+
+#results{
+    font-style: italic;
+}
+
+#input, #sound, #meter{
+    display: block;
+    width: 500px;
+    height: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#meter {
+    height: 200px;
+}
+
+/* #banner {
+    background-color: white;
+} */
+
+#ad1 {
+    position: fixed;
+    right:10px;
+    top: 600px;
+}
+
+#ad2 {
+    position: fixed;
+    left:10px;
+    top: 100px;
+}
+
+#chandler {
+    position: fixed;
+    top: 600px;
+    left: 10px;
+}
+
+#apology {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+
+#never {
+    position: fixed;
+    top: 100px;
+    left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}

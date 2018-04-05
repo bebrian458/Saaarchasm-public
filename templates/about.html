@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> About Us </title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='about.css') }}">
+    </head>
+<body background="{{ url_for('static', filename='images/background.jpg') }}">
+    <ul>
+        <li><a class="active" href="/about">About</a></li>
+        <li><a href="/">Home</a></li>
+    </ul>
+    <center> 
+    <h1>
+        <span id="title">LA Hacks 2018</span> 
+    </h1>
+
+    <!-- <h2><u> About our App</u></h2> -->
+    <p id="app" > So there comes a time when a friend just does not <i> get it. </i> That is where this comes in.<br> Enter the Saaarchasm, a place where those <br>who are living a more...
+                  <i>blissful</i> life can come to train and practice this wonderful art.</p>
+
+    <p id = "practical"> Oh yeah, detecting sarcasm is pretty important too. <br> Machine learning is all about that training data, and sarcasm detectors <br>could be used to find false
+                         negatives and false positives to better <br>facilitate the training process, so yeah, <i> preeeetty useful.</i> </p>
+
+    
+    <br>
+    <h2> <u> About our Team </u> </h2>
+    <table>
+        <tr>
+        <div id="leslie"> 
+            <td><center>
+                <h3> Leslie Liang</h3> 
+                <img style="display:inline-block" src="{{ url_for('static', filename='images/leslie.jpg') }}" width="175" height="200" alt="Leslie's Picture">
+            </center></td>
+            <td><p> Leslie is a third year undergraduate studying Computer Science at UCLA and is interested in backend development.</p></td>
+        </div>
+        </tr>
+        <tr>
+        <div id="jon">
+            <td><center>  
+                <h3> Jonathan Quach </h3> 
+                <img src="{{ url_for('static', filename='images/jon.png') }}" width="175" height="200" alt="Jon's Picture">
+            </center></td>
+            <td><p> Jonathan is a third year undergraduate student studying Computer Science and Linguistics at UCLA. He is interested in using natural language processing to better understand medical records.</p></td>
+        </div>
+        </tr>
+        <tr>
+        <div id="brian">
+            <td><center>    
+                <h3> Brian Be </h3> 
+                <img src="{{ url_for('static', filename='images/brian.png') }}" width="175" height="200" alt="Brian's Picture">
+            </center></td>
+            <td><p> Brian is a third year undergraduate student studying Computer Science at UCLA and is interested in full stack development and virtual/augmented reality.</p></td>
+        </div>
+        </tr>
+    </table>
+
+</center>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sarcasm App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <ul>
+      <!-- <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li> -->
+      <li><a href="/about">About</a></li>
+      <li><a class="active" href="/">Home</a></li>
+    </ul>
+
+    <center>
+    <div id="banner">
+        <h1> Welcome to the <span id="title">Saaarchasm! </span></h1>
+    </div>
+    
+    <div id="input">
+        <form id="form" role="form" method = "POST" onsubmit="return false;">
+          <input type="text" name="phrase" size="50" placeholder="Enter a phrase (e.g. 'I love my job!')">
+          <input type = "submit" value = "Try it out!" />
+        </form>
+    </div>
+
+    <div id="meter">
+        <h2>The Sarczometer Evaluation: </h2>
+        <h2><span id="results"></span></h2>
+        <div style="width: 500px; height:100px; border:5px; text-align:center">
+          <center>
+            <div class="bar" id="rect1"><span class="sarcastic-text"><h3>Not Sarcastic!</h3></span> </div>
+            <div class="bar" id="rect2"><span class="sarcastic-text"><h3>Sarcastic!</h3></span></div>
+          </center>
+        </div>
+    </div>
+
+    <div id="sound">
+      <h2>Here's what I think it sounds like! </h2>
+      <audio id="player" controls="controls"></audio>
+    </div>
+
+    <img id="ad1" style="display:inline-block" src="{{ url_for('static', filename='images/ad1.png') }}" width="292" height="360" alt="Leslie's Picture">
+    <img id="ad2" style="display:inline-block" src="{{ url_for('static', filename='images/leslie.jpg') }}" width="175" height="300" alt="Leslie's Picture">
+    <img id="chandler" style="display:inline-block" src="{{ url_for('static', filename='images/chandler.jpg') }}" width="1550" height="400" alt="chandlerBing">
+    <img id="apology" style="display:inline-block" src="{{ url_for('static', filename='images/sarcastic_apology.jpg') }}" width="292" height="500" alt="sorryNot">
+    <img id="never" style="display:inline-block" src="{{ url_for('static', filename='images/never_sarcastic.jpg') }}" width="292" height="500" alt="neverSorry">
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src={{ url_for('static', filename='main.js') }}></script>
+    </center>
+  </body>
+</html>
