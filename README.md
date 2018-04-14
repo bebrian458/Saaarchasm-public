@@ -20,8 +20,15 @@ $ ./startServer.sh &
 This will initate a virtual environment to enable Google's text-to-speech api for python 3. To start up the server manually from within a configured virtual environment, use instead:
 
 ~~~
-$ pip install requirements.txt
+$ pip install -r requirements.txt
 $ python main.py 
+~~~
+
+Note: Google Cloud's text-to-speech API requires an API key to install its module. This key can be retrieved at their website.
+
+To update python module dependencies:
+~~~
+$ pip freeze > requirements.txt
 ~~~
 
 ### Running Virtual Environment
@@ -35,4 +42,4 @@ $ source env/bin/activate
 ### Frameworks and APIs
 * Flask for URI routing
 * jQuery for AJAX
-* Google's text-to-speech API
+* Google Cloud's text-to-speech API
